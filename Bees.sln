@@ -3,16 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30611.23
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bees", "Bees\Bees.csproj", "{B88641D9-C212-4E4F-9045-1DB0174CE2BE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bees", "Bees\Bees.csproj", "{B88641D9-C212-4E4F-9045-1DB0174CE2BE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeesTestProject", "BeesTestProject\BeesTestProject.csproj", "{1F3FD792-F30A-44AA-B3AA-310C94C59967}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BeesTestProject", "BeesTestProject\BeesTestProject.csproj", "{1F3FD792-F30A-44AA-B3AA-310C94C59967}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReadMe", "ReadMe", "{8A0FDB7B-48D5-423D-870A-3393E5B41567}"
-	ProjectSection(SolutionItems) = preProject
-		..\..\..\Documents\Work\Bees\ReadMe.txt = ..\..\..\Documents\Work\Bees\ReadMe.txt
-	EndProjectSection
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeesForm", "BeesForm\BeesForm.csproj", "{850DFE92-921A-4C3F-BF7E-F6211B89FA4A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BeesForm", "BeesForm\BeesForm.csproj", "{850DFE92-921A-4C3F-BF7E-F6211B89FA4A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

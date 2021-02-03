@@ -6,9 +6,9 @@ namespace Bees
 {
     public interface IBee
     {
-        float Health { get; set; }
+        double Health { get; set; }
         bool IsDead { get; set; }
-        float HealthLimit { get; set; }
+        double HealthLimit { get; set; }
         void Damage(int damageDealt);
         void CheckDead();
         String Print();
