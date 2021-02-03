@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Bees
 {
-    class DroneBee : Bee
+    public class DroneBee : Bee
     {
         public DroneBee()
         {

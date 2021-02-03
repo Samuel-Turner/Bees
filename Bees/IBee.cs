@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Bees
 {
-    interface IBee
+    public interface IBee
     {
         float Health { get; set; }
         bool IsDead { get; set; }
