@@ -11,5 +11,6 @@ namespace Bees
         float HealthLimit { get; set; }
         void Damage(int damageDealt);
         void CheckDead();
+        String Print();
     }
 }

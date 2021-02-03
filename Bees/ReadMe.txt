@@ -13,7 +13,8 @@ In practice I divide the current health by 100 as to make sure integer division 
 The damage dealt method finishes by calling the CheckDead method.
 
 The checkDead method compaes the HealthLimit variable to the current health of the bee, and if
-the current health is less than the health limit IsDead becomes true. 
+the current health is less than the health limit IsDead becomes true.
+CheckDead is private as it should only be accessed via the damage method.
 The checkDead method is seperate from the damage method as each method should compute one thing. 
 
 In each of their respective constructors the worker, queen and drone HealthLimits are set to 70,20 and 50 respectfully.

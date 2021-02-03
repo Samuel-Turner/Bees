@@ -24,6 +24,21 @@ namespace Bees
                 IsDead = true;
             }
         }
+        public String Print()
+        {
+            string aliveOutput = ""; 
+            if (IsDead)
+            {
+                aliveOutput = "Yes";
+            }
+            else
+            {
+                aliveOutput = "No";
+            }
+            //Only two decimal points in the print, so the form looks good. 
+            double healthOutput = Math.Truncate(Health * 100) / 100; 
+            return ("Health: " + healthOutput + " Dead: " + aliveOutput); 
+        }
         public Bee() 
         {
             Health = 100;
