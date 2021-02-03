@@ -1,8 +1,11 @@
 Class';
-Bee- Properties{ float Health, boolean IsDead, float HealthLimit}
+Bee- Properties{ double Health, boolean IsDead, double HealthLimit}
 Health is the current health of the bee and will be initialised at 100.
 IsDead is initialised as false.
 I decided to add a health limit property to the class, so a quick comparison could be made against the health. 
+I used the double datatype so I could use the math truncate function as float does not work as an input parameter.
+Double also has the benefit of being able to store a larger number with more digits after the decimal point, which could 
+come be useful if appropriate use cases arise in the future.
 
 Methods{damage(int damageDealt), checkDead}
 I created the damage method as follows: 
@@ -44,7 +47,6 @@ WorkerDeadTest - This test is to check if the worker is not still alive after 40
 QueenAliveTest - This test is to check if the queen is still alive after 10 damage.
 
 QueenDeadTest - This test is to check if the queen is not still alive after 90 damage.
-
 
 All tests currently pass.
 
