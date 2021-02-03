@@ -7,7 +7,7 @@ namespace BeesTestProject
     {
         
         [Test]
-        public void DamgeMethodTest1()
+        public void DamageMethodTest1()
         {
             //This test is to check if the damage method works when health is at maximum health.
             Bee bee1 = new Bee();
@@ -15,7 +15,7 @@ namespace BeesTestProject
             Assert.AreEqual(95,bee1.Health);
         }
         [Test]
-        public void DamgeMethodTest2()
+        public void DamageMethodTest2()
         {
             //This test is to check if the damage method works when health is not at maximum health.
             Bee bee1 = new Bee();
@@ -24,7 +24,7 @@ namespace BeesTestProject
             Assert.AreEqual(90.25, bee1.Health);
         }
         [Test]
-        public void DamgeMethodTest3()
+        public void DamageMethodTest3()
         {
             //This test is to check if the damage method doesn't cause an error when damageDealt input is too low.
             Bee bee1 = new Bee();
@@ -32,7 +32,7 @@ namespace BeesTestProject
             Assert.AreEqual(100, bee1.Health);
         }
         [Test]
-        public void DamgeMethodTest4()
+        public void DamageMethodTest4()
         {
             //This test is to check if the damage method doesn't cause an error when damageDealt input is too high.
             Bee bee1 = new Bee();
@@ -42,9 +42,9 @@ namespace BeesTestProject
         [Test]
         public void DroneAliveTest()
         {
-            //This test is to check if the drone is still alive after 40 damage.
+            //This test is to check if the drone is still alive after 10 damage.
             DroneBee bee1 = new DroneBee();
-            bee1.Damage(40);
+            bee1.Damage(10);
             Assert.AreEqual(false, bee1.IsDead);
         }
         [Test]
@@ -66,9 +66,9 @@ namespace BeesTestProject
         [Test]
         public void WorkerDeadTest()
         {
-            ///This test is to check if the worker is not still alive after 60 damage.
+            ///This test is to check if the worker is not still alive after 40 damage.
             WorkerBee bee1 = new WorkerBee();
-            bee1.Damage(60);
+            bee1.Damage(40);
             Assert.AreEqual(true, bee1.IsDead);
         }
         [Test]
