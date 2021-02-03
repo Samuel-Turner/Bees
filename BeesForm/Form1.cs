@@ -33,7 +33,7 @@ namespace BeesForm
         {
             foreach (Bee bee in BeeList)
             {
-                bee.Damage(_random.Next(0, 79));
+                bee.Damage(_random.Next(1, 79));
             }
             changeLabelTexts();
         }
