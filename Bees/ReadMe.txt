@@ -1,7 +1,7 @@
 Class';
 Bee- Properties{ float Health, boolean IsDead, float HealthLimit}
 Health is the current health of the bee and will be initialised at 100.
-IsDeadd is initialised as false.
+IsDead is initialised as false.
 I decided to add a health limit property to the class, so a quick comparison could be made against the health. 
 
 Methods{damage(int damageDealt), checkDead}
@@ -15,7 +15,7 @@ The damage dealt method finishes by calling the CheckDead method.
 The checkDead method compaes the HealthLimit variable to the current health of the bee, and if
 the current health is less than the health limit IsDead becomes true.
 CheckDead is private as it should only be accessed via the damage method.
-The checkDead method is seperate from the damage method as each method should compute one thing.
+The checkDead method is separate from the damage method as each method should compute one thing.
 
 Print Method was added to make presenting information onto a form easier and look nicer.
 I used yes and no instead of true and false for isdead and I thought that it would be easier for the average user to understand.
@@ -54,5 +54,5 @@ a for loop instead of a foreach loop here as I am iterating through two lists at
 initialiseBeeList and initialiseLabelList are two void methods that i used to make the Form1 method look neater.
 button1_click, I use a foreach loop to iterate through the bee list and call the damage method for each bee using a pseudo random number using the Random class. 
 
-For the interface I chose to seperate each type of bee in columns so the data is easier to read.
+For the interface I chose to separate each type of bee in columns so the data is easier to read.
 I decided to just use a form as it quick to create and fits the user requirement of showing 30 bees and having a button.
